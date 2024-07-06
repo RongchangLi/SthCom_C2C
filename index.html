@@ -3,32 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>ZSCAR_C2C</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-/*             background-color: #f4f4f4; */
-            color: #333;
             text-align: center;
         }
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            text-align: center;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 60px; /* Adjusted for fixed navbar */
-            border-radius: 8px;
+            text-align: justify;
         }
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #2c3e50;
+            font-size: 2.0em;
+            text-align: center;
+            margin-bottom: 5px;
         }
         .conference {
             text-align: center;
@@ -43,25 +37,7 @@
         }
         .authors a {
             text-decoration: none;
-            color: #3498db;
-        }
-        .links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        .links a {
-            text-decoration: none;
-            color: #333;
-            font-size: 1.2em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .links img {
-            width: 40px;
-            height: 40px;
+            color: #0066cc;
         }
         .section {
             margin-bottom: 40px;
@@ -73,10 +49,9 @@
             margin: 10px auto;
         }
         .section-title {
-            font-size: 1.8em;
+            font-size: 1.5em;
             margin-bottom: 10px;
-            text-align: center;
-            color: #2c3e50;
+            text-align: left;
         }
         .bibtex {
             background-color: #f7f7f7;
@@ -89,85 +64,32 @@
             margin: 0 auto;
             display: inline-block;
             text-align: justify;
-            border-radius: 8px;
         }
-/*         nav {
-            background: #f8f9fa;
-            padding: 10px;
-            color: #333;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        footer {
-            background: #f8f9fa;
-            color: #333;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .back-to-top {
-            position: fixed;
-            bottom: 50px;
-            right: 30px;
-            background: #f8f9fa;
-            color: #333;
-            padding: 10px;
-            border-radius: 50%;
-            text-decoration: none;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: none;
-        } */
     </style>
 </head>
 <body>
-<!--     <nav>
-        <a href="#abstract">Abstract</a>
-        <a href="#dataset">Dataset</a>
-        <a href="#details">Details</a>
-        <a href="#bibtex">BibTex</a>
-    </nav> -->
-    
-<!--     <div class="container"> -->
-        <h1>C2C: Component-to-Composition Learning for Zero-Shot Compositional Action Recognition</h1>
+    <div class="container">
+        <h1>C2C: Component-to-Composition Learning for <br>
+            Zero-Shot Compositional Action Recognition</h1>
         <div class="conference">ECCV 2024</div>
         <div class="authors">
             <a href="https://rongchangli.github.io/">Rongchang Li</a>, 
+            <a href="https://scholar.google.com/citations?user=Y6KtijIAAAAJ">Zhenhua Feng</a>, 
+            <a href="https://xu-tianyang.github.io/">Tianyang Xu</a>,
+            <a href="https://happylinze.github.io/">Linze Li</a>, 
+            <a href="https://scholar.google.com/citations?hl=zh-CN&user=5IST34sAAAAJ">Xiao-Jun Wu</a>, 
+            <a href="https://link_to_author3_profile.com">Author3</a>,
             <a href="https://link_to_author2_profile.com">Author2</a>, 
             <a href="https://link_to_author3_profile.com">Author3</a>
         </div>
         
-        <div class="links">
-            <a href="https://github.com/your_project_repo">
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-                Code
-            </a>
-<!--             <a href="https://arxiv.org/abs/your_paper_id">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/ArXiv_logo.png" alt="arXiv">
-                Paper
- </a> -->
-        </div>
-           
-    
-        <div class="section" id="abstract">
-            <div class="section-title">Abstract</div>
-<!--            gif ============== -->
+        <div class="section">
+            <!--            gif ============== -->
              <br />
             <div align="center" style="display: flex; justify-content: center; align-items: center;">
               <div style="margin: 10px;margin-bottom: 1px">
                 <img src="samples/open_door.gif" width="120" />
-                <br />
+                <br>
                 <i>
                   <span style="color: black"><strong>Seen:</strong></span> 
                   <span style="color: red;">Open</span> 
@@ -198,33 +120,27 @@
             <div align="center",style="margin-bottom: 1px;margin-top: 1px;">
               <strong>Zero-Shot Compositional Action Recognition (ZS-CAR)</strong>
             </div>
-            <br />
+            <br>
 <!--          gif   =========== -->
-            
-            <p>Compositional actions consist of dynamic (verbs) and static (objects) concepts. Humans can easily recognize unseen compositions using the learned concepts. 
-                For machines, solving such a problem requires a model to recognize unseen actions composed of previously observed verbs and objects, thus requiring, so-called, compositional generalization ability. 
-                To facilitate this research, we propose a novel Zero-Shot Compositional Action Recognition (ZS-CAR) task. For evaluating the task, we construct a new benchmark, Something-composition (Sth-com), based on the widely used Something-Something V2 dataset.
-                We also propose a novel Component-to-Composition (C2C) learning method to solve the new ZS-CAR task. C2C includes an independent component learning module and a composition inference module. 
-                Last, we devise an enhanced training strategy to address the challenges of component variation between seen and unseen compositions and to handle the subtle balance between learning seen and unseen actions. 
-                The experimental results demonstrate that the proposed framework significantly surpasses the existing compositional generalization methods and sets a new state-of-the-art. The new Sth-com benchmark and code are available at https://github.com/RongchangLi/ZSCAR_C2C.</p>
+        <div class="section-title">Abstract</div>
+            <p>Compositional actions consist of dynamic (verbs) and static (objects) concepts. Humans can easily recognize unseen compositions using the learned concepts. For machines, solving such a problem requires a model to recognize unseen actions composed of previously observed verbs and objects, thus requiring, so-called, compositional generalization ability. To facilitate this research, we propose a novel Zero-Shot Compositional Action Recognition (ZS-CAR) task. For evaluating the task, we construct a new benchmark, Something-composition (Sth-com), based on the widely used Something-Something V2 dataset. We also propose a novel Component-to-Composition (C2C) learning method to solve the new ZS-CAR task. C2C includes an independent component learning module and a composition inference module. Last, we devise an enhanced training strategy to address the challenges of component variation between seen and unseen compositions and to handle the subtle balance between learning seen and unseen actions. The experimental results demonstrate that the proposed framework significantly surpasses the existing compositional generalization methods and sets a new state-of-the-art. The new Sth-com benchmark and code are available at <a href="https://github.com/RongchangLi/ZSCAR_C2C">the page.</a></p>
             <img src="path/to/abstract_image.jpg" alt="Abstract Image">
         </div>
         
-        <div class="section" id="dataset">
+        <div class="section">
             <div class="section-title">Dataset</div>
             <p>Description of the dataset used in the project.</p>
             <img src="path/to/dataset_image.jpg" alt="Dataset Image">
         </div>
-
-    
         
-        <div class="section" id="details">
+        <div class="section">
             <div class="section-title">Details</div>
             <p>Detailed information about the project.</p>
             <img src="path/to/details_image.jpg" alt="Details Image">
         </div>
         
-        <div class="section" id="bibtex">
+<!--bibtex info  -->
+<!--         <div class="section">
             <div class="section-title">BibTex</div>
             <div class="bibtex">
                 @article{your_project_2024,<br>
@@ -234,22 +150,7 @@
                 &nbsp;&nbsp;year={2024}<br>
                 }
             </div>
-        </div>
-<!--     </div> -->
-<!--     <footer>
-        &copy; 2024 Linze. All rights reserved. | Contact: email
-    </footer> -->
-<!--     <a href="#top" class="back-to-top">↑</a>
-    <script>
-        // Show the "back to top" button when scrolling down
-        window.addEventListener('scroll', function() {
-            const backToTopButton = document.querySelector('.back-to-top');
-            if (window.scrollY > 200) {
-                backToTopButton.style.display = 'block';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        });
-    </script> -->
+        </div> -->
+    </div>
 </body>
 </html>
